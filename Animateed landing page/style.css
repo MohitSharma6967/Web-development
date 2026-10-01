@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+#img-box{
+position:absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+z-index: 50;
+}
+
+#img-box img{
+    height: 700px;
+}
+
+#text{
+    text-transform: uppercase;
+    font-size: 20px;
+    position: absolute;
+    left: 35%;
+    width: 600px;
+    text-align:center;
+    font-weight: 900;
+    word-spacing: 5px;
+    top: 15%;
+    z-index: 51;
+}
+
+#scroller-content{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    top: 22%;
+    overflow-x: auto;
+
+}
+
+#scroller-content::-webkit-scrollbar{
+    display: none;
+}
+
+#scroller-content h1{
+    margin-left: 15px;
+    font-size: 120px;
+    font-weight: 900;
+    animation-name: scroller;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+#scroller-content2{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    top: 58%;
+    overflow-x: auto;
+}
+
+#scroller-content2::-webkit-scrollbar{
+    display: none;
+}
+
+#scroller-content2 h1{
+    margin-left: 15px;
+    font-size: 120px;
+    font-weight: 900;
+    animation-name: scroller;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: reverse;
+}
+
+#scroller-content3{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    top: 40%;
+    z-index:51;
+    overflow-x: auto;
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+#scroller-content3 h1{
+    margin-left: 15px;
+    font-size: 120px;
+    font-weight: 900;
+    animation-name: scroller;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+#scroller-content3::-webkit-scrollbar{
+    display: none;
+}
+
+@keyframes scroller {
+    0%{
+        transform: translateX(calc(-100% - 15px));
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
