@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arimo", sans-serif;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    width: 100%;
+    height: 100%;
+    background-color: #dadada;
+}
+
+#center{
+    height: 80%;
+    width: 70%;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(0%, -50%);
+}
+
+.imagecontainer{
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    overflow: hidden;
+}
+
+.text{
+    position: absolute;
+    height: 70px;
+    width: 280px;
+    overflow: hidden;
+    bottom: 15%;
+    left: 7%;
+    z-index: 1 ;
+}
+
+.text h1{
+    font-size: 6vh;
+    position: absolute;
+    top: 70px;
+}
